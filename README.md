@@ -46,6 +46,15 @@ docker attach contrail-developer-sandbox
 *Required* first steps in the container:
 
 ```
+Add the following content into your /etc/hosts file:
+
+192.30.255.112  github.com
+52.84.225.226 dseasb33srnrn.cloudfront.net
+66.102.255.60 mirrors.aliyun.com
+108.61.16.227 vault.centos.org
+
+then, go on:
+
 cd /root/contrail
 repo sync -j $(nproc) # to get the latest code checked out
 cd /root/contrail-dev-env
