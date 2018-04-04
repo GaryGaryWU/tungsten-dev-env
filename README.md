@@ -55,6 +55,7 @@ Add the following content into your /etc/hosts file:
 
 then, go on:
 
+ln -s /lib/modules/3.10.0-693.21.1.el7.x86_64/ /lib/modules/4.4.0-62-generic
 cd /root/contrail
 repo sync -j $(nproc) # to get the latest code checked out
 cd /root/contrail-dev-env
